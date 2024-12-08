@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="teal_700">#018786</color>
-    <color name="black">#121212</color> <!-- A soft black for the background -->
-    <color name="cream">#F5E7DE</color> <!-- Softer for night readability -->
-    <color name="brown">#5D4037</color>
-    <color name="light_gray">#F5F5F5</color>
-</resources>
