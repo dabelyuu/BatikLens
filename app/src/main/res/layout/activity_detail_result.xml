@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Image of Batik -->
+        <ImageView
+            android:id="@+id/imgBatik"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:contentDescription="@string/batik_image_desc"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/backgrounds/scenic"/>
+
+        <!-- Name of Batik -->
+        <TextView
+            android:id="@+id/tvBatikName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/title_detail" />
+
+        <!-- Description of Batik -->
+        <TextView
+            android:id="@+id/tvBatikDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:text="@string/description_detail" />
+        <!-- Asal (Origin) Title -->
+        <TextView
+            android:id="@+id/tvAsalTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Asal"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Asal (Origin) Content -->
+        <TextView
+            android:id="@+id/tvAsalContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            tools:text="asal Content" />
+
+        <!-- Sejarah (History) Title -->
+        <TextView
+            android:id="@+id/tvSejarahTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Sejarah"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Sejarah (History) Content -->
+        <TextView
+            android:id="@+id/tvSejarahContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:text="Sejarah Content" />
+
+        <!-- Filosofi (Philosophy) Title -->
+        <TextView
+            android:id="@+id/tvFilosofiTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Filosofi"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Filosofi (Philosophy) Content -->
+        <TextView
+            android:id="@+id/tvFilosofiContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:text="filosofi Content" />
+
+
+    </LinearLayout>
+</ScrollView>
+

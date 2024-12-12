@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name" translatable="false">Batik Lens</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title">What is Batik Lens</string>
+    <string name="app_desc">BatikLens adalah aplikasi untuk mengenali dan mengkategori pola batik Indonesia dalam gambar beserta penjelasan serta profil dari batik. Aplikasi ini bertujuan untuk melindungi warisan budaya batik dengan memberikan detail tentang batik.
+        Selain itu, aplikasi ini juga berfungsi sebagai alat edukasi untuk meningkatkan pengetahuan tentang batik sebagai seni budaya Indonesia yang penting.</string>
+    <string name="login_text">Welcome Again to Batik Lens</string>
+    <string name="register_text">Hello, Welcome to Batik Lens</string>
+    <string name="image_desc">Image Description</string>
+    <string name="batik_image_desc">Batik Image</string>
+    <string name="email_template" translatable="false">anggie@gmail.com</string>
+    <string name="history" translatable="false">History</string>
+    <string name="logout">Logout</string>
+    <string name="title_detail">Batik Name</string>
+    <string name="description_detail">Batik Description</string>
+    <string name="input_email">Input Email</string>
+    <string name="input_password">Input Password</string>
+    <string name="signin">SignIn</string>
+    <string name="or_continue_with">Or Continue With</string>
+    <string name="tv_no_account">Didn\'t Have an Account?</string>
+    <string name="signup">SignUp</string>
+    <string name="input_username">Input Username</string>
+    <string name="confidence_score">Confidence: %1$s</string>
+    <string name="start">Start</string>
+    <string name="camera">Camera</string>
+    <string name="settings">Settings</string>
+    <string name="language">Language</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="help">Help</string>
+    <string name="item_batik_name">batik name</string>
+    <string name="item_brief_description">brief description</string>
+    <string name="account">Account</string>
+    <string name="your_web_client_id" translatable="false">565827583178-ekqkv4ve1hphsiep3iu9ksal2lr4s2io.apps.googleusercontent.com</string>
+    <string name="you_have_been_logged_out">You have been logged out</string>
+    <string name="language_updated_to">Language Updated to %1$s</string>
+    <string name="select_language">Select Language</string>
+    <string name="image_classifier_failed">Image classifier failed to initialize. See error logs for details</string>
+    <string name="result">Result</string>
+</resources>
