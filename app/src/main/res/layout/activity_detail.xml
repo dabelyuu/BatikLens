@@ -68,7 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Asal"
+        android:text="@string/asal"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -79,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:textSize="16sp"
-        android:text="AsalContent" />
+        tools:text="AsalContent" />
 
     <!-- Sejarah Title -->
     <TextView
@@ -87,7 +87,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="16dp"
-    android:text="Sejarah"
+    android:text="@string/sejarah"
     android:textSize="18sp"
     android:textStyle="bold" />
 
@@ -98,7 +98,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp"
     android:textSize="16sp"
-    android:text="Content" />
+    tools:text="Content" />
 
     <!-- Filosofi  Title -->
     <TextView
@@ -106,7 +106,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="16dp"
-    android:text="Filosofi"
+    android:text="@string/filosofi"
     android:textSize="18sp"
     android:textStyle="bold" />
 
@@ -117,7 +117,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp"
     android:textSize="16sp"
-    android:text="Filosofi content" />
+    tools:text="Filosofi content" />
 
 
 </LinearLayout>

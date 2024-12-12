@@ -32,4 +32,12 @@
     <string name="select_language">Pilih Bahasa</string>
     <string name="image_classifier_failed">Image Classifier gagal di inisiasi</string>
     <string name="result">Hasil</string>
+    <string name="how_to_use_batik_lens">Bagaimana menggunakan batik lens?</string>
+    <string name="curios_and_did_not_know_batik_pattern_that_you_see_we_provide_realtime_scan_and_full_scan_features">Pensaran dan gak tau pola batik yang anda lihat? Kami menyediakan fitur realtime scan dan full scan</string>
+    <string name="app_desc_3">Buka menu kamera dan gunakan langsung Fitur realtime scan kami
+
+Ingin hasil scan yang akurat dan jelas? Capture gambar batik yang anda inginkan dan tunggu hasilnya</string>
+    <string name="asal">Asal</string>
+    <string name="sejarah">Sejarah</string>
+    <string name="filosofi">Filosofi</string>
 </resources>

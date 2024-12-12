@@ -36,4 +36,10 @@
     <string name="select_language">Select Language</string>
     <string name="image_classifier_failed">Image classifier failed to initialize. See error logs for details</string>
     <string name="result">Result</string>
+    <string name="how_to_use_batik_lens">How To Use Batik Lens?</string>
+    <string name="curios_and_did_not_know_batik_pattern_that_you_see_we_provide_realtime_scan_and_full_scan_features">Curios and Did not know Batik Pattern That you see? We provide realtime scan and full scan features</string>
+    <string name="app_desc_3">Open the camera menu and use our real-time scan feature. Want accurate and clear scan results? Capture the batik image you want and wait for the results.</string>
+    <string name="asal">Origin</string>
+    <string name="sejarah">History</string>
+    <string name="filosofi">Philosophy</string>
 </resources>

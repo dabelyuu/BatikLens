@@ -153,8 +153,11 @@ class CameraFragment : Fragment() {
 
         batikViewModel.predictImage(multipartBody).observe(viewLifecycleOwner){result ->
             when(result){
-                is Result.Loading -> {}
+                is Result.Loading -> {
+                    binding.progressBarLogin.visibility = View.VISIBLE
+                }
                 is Result.Error -> {
+                    binding.progressBarLogin.visibility = View.GONE
                     AlertDialog.Builder(requireContext()).apply {
                         setTitle("Error predict data")
                         setMessage(result.error.toString())
@@ -166,6 +169,7 @@ class CameraFragment : Fragment() {
                     }
                 }
                 is Result.Success -> {
+                    binding.progressBarLogin.visibility = View.GONE
                     val prediction = result.data
 
                     val predictionData = prediction.first
