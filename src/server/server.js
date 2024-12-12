@@ -4,7 +4,7 @@ const InputError = require('../exceptions/InputError');
 const loadModel = require('../services/loadModel');
 
 const admin = require('firebase-admin');
-const serviceAccount = require('../../adminsdk.json'); //firebase sevice account token here to use the SDK
+const serviceAccount = JSON.parse(process.env.FIREBASE_ADMIN_SDK_KEY); //firebase sevice account token here to use the SDK
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)

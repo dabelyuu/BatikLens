@@ -1,4 +1,4 @@
-const { postPredictBatikHandler, getMetadataHandler, getHistoryHandler } = require('./handler');
+const { postPredictBatikHandler, getMetadataHandler, getHistoryHandler, getAllMetadataHandler } = require('./handler');
 const authenticateUser = require('../middlewares/authenticateUser');
  
 const routes = [
@@ -27,6 +27,11 @@ const routes = [
     method: "GET",
     handler: getMetadataHandler,
   },
+  {
+    path: "/allbatiksmetadata",
+    method: "GET",
+    handler: getAllMetadataHandler,
+  }
 ]
  
 module.exports = routes;

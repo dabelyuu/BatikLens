@@ -192,4 +192,64 @@ const getHistoryHandler = async (request, h) => {
   }
 };
 
-module.exports = { postPredictBatikHandler, getMetadataHandler, getHistoryHandler };
+
+const getAllMetadataHandler = async (request, h) => {
+  try {
+      // Mengambil semua dokumen dari koleksi "metadata"
+      const metadataCollection = await dbMetadata.collection("metadata").get();
+
+      if (metadataCollection.empty) {
+          return h.response({
+              success: false,
+              message: "Tidak ada metadata yang ditemukan."
+          }).code(404);
+      }
+
+      // List untuk menyimpan semua metadata
+      const metadataList = [];
+
+      for (const doc of metadataCollection.docs) {
+          const metadata = doc.data();
+          const id = doc.id;
+
+          // Mengambil gambar dari Google Cloud Storage
+          const [files] = await bucket.getFiles({
+              prefix: `batik-${id}`,
+          });
+
+          // Membuat signed URL
+          const file = files.length > 0 ? bucket.file(files[0].name) : null;
+          const signedUrl = file
+              ? await file.getSignedUrl({
+                  action: "read",
+                  expires: Date.now() + 3600000, // URL berlaku selama 1 jam
+              })
+              : null;
+
+          const imageInfo = signedUrl
+              ? { url: signedUrl }
+              : { message: "Gambar tidak ditemukan" };
+
+          // Menambahkan metadata ke dalam list
+          metadataList.push({
+              id,
+              ...metadata,
+              imageUrl: imageInfo,
+          });
+      }
+
+      return h.response({
+          success: true,
+          data: metadataList
+      }).code(200);
+
+  } catch (error) {
+      console.error(error);
+      return h.response({
+          success: false,
+          message: error.message
+      }).code(500);
+  }
+};
+
+module.exports = { postPredictBatikHandler, getMetadataHandler, getHistoryHandler, getAllMetadataHandler };

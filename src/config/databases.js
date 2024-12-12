@@ -1,6 +1,6 @@
 const { Firestore } = require('@google-cloud/firestore');
 const { Storage } = require('@google-cloud/storage');
-const serviceAccount = require("../../adminsdk.json"); //your cab also use firebase service account token here
+const serviceAccount = JSON.parse(process.env.FIREBASE_ADMIN_SDK_KEY); //your cab also use firebase service account token here
 
 //firestore databases
 const dbMetadata = new Firestore({
